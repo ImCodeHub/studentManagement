@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.error-input {
+    border: 1px solid red;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(203, 233, 243);
+    background-size: cover;
+    padding: 10px;
+    position: relative;
+}
+
+#topPanel {
+    width: 100%;
+    height: 10%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 11px;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+    padding: 30px;
+}
+
+
+
+#logo {
+    color: #070707;
+}
+#logo h2{
+    font-size: 1.4em ;
+}
+
+#totalStudent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#tsBox {
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: large;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+}
+
+#lowerPan {
+    width: 100%;
+    height: 85vh;
+    background-color: #EFEDFF;
+    border-radius: 11px;
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    /* background-image: url(1-nature-wallpaper-grass-hd.preview.jpg);
+    background-size:cover ; */
+    padding: 20px 20px;
+    position: relative;
+    gap: 10px;
+}
+
+#leftPanel {
+    width:40vw;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+    border-radius: 11px;
+}
+
+form {
+    padding: 10px;
+    border-radius: 11px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftPanel form input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 0px solid;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+    font-size: 18px;
+    overflow: hidden;
+}
+#leftPanel form input[type=email] {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 0px solid;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#btn {
+    padding: 10px;
+
+}
+
+.actionButton {
+    display: flex;
+    gap: 10px;
+}
+
+#submit {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(172, 209, 252);
+    font-weight: 800;
+    
+}
+
+#update {
+    width: 50%;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    color: white;
+    font-size: 20px;
+    background-color: #acd1fc;
+    font-weight: 800;
+}
+
+#delete {
+    width: 50%;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    color: white;
+    font-size: 20px;
+    background-color: #acd1fc;
+    font-weight: 800;
+}
+
+#leftPanel #submit:hover {
+    cursor: pointer;
+    background-color: #0FC29E;
+}
+
+#leftPanel #delete:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#leftPanel #update:hover {
+    cursor: pointer;
+    background-color: rgb(246, 205, 0);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#rightPanel {
+    width: 870px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+    border-radius: 11px;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+#tablepanel {
+    width: 100%;
+    max-height: 60vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: auto;
+    border: black 2px;
+
+}
+
+.table {
+    width: 100%;
+}
+
+th {
+    background-color: #0fc29e;
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+
+tr {
+    width: 10vw;
+    height: 5vh;
+}
+
+#student-list tr:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 15vw;
+    height: 7vh;
+    box-shadow: 0px 0px 20px rgb(152, 150, 150);
+    border: 0px 0px 0px ;
+    border-collapse: none;
+    
+    
+}
+
+button {
+    display: space-between;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.upbutton {
+    width: 17vw;
+    height: 5vh;
+    border-radius: 9px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #acd1fc;
+    cursor: pointer;
+    border: none;
+    color: white;
+
+}
+
+.delbutton {
+    margin-top: 10px;
+    width: 17vw;
+    height: 5vh;
+    border-radius: 9px;
+    gap: 25px;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #acd1fc;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.delbutton:hover {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 40px rgb(25, 24, 24);
+}
+
+.upbutton:hover {
+    background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+
+    #tablepanel {
+        overflow: hidden;
+    }
+
+    #lowerPan {
+        display: block;
+        gap: 10px;
+        height: 100%;
+    }
+}
+.notification {
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    right: 500px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    display: none;
+    z-index: 999;
+}
+#myInput {
+    /* background-image: url(''); */
+    /* background-position: 10px 10px; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }

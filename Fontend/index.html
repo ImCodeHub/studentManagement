@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="simpleFetchapi.js"></script>
+    <title>Student Management System</title>                                                                                                                      
+</head>
+<body>
+    <div id="main">
+        <div id="topPanel">
+            <div id="logo">
+                <h2>Student management system</h2>
+            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+            <div id="totalStudent">
+                <h3>Total student</h3>
+                <div id="tsBox">0</div>
+            </div>
+        </div>
+        <div id="lowerPan">
+            <div id="leftPanel">
+                <h2>Student Detail form</h2>
+                <form id="studentForm" class="form">
+                    <input type="hidden" id="id" name="id">
+                    <label for="name">Student name:</label>
+                    <br>
+                    <input type="text" id="name" placeholder="Enter Student's name" autofocus required>
+                    <br>
+                    <label for="mobileno">Mobile No:</label>
+                    <br>
+                    <input type="text" id="mobile" placeholder="Enter student's mobile number" required>
+                    <br>
+                    <label for="email">Email Id:</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Enter student's Email id " required>
+                    <br>
+                    <button type="submi" id="submit">Submit</button>
+                    <button type="reset" id="submit">Reset</button>
+                </form>
+                <div id="btn">
+                    <div class="actionButton">
+                        <button type="button" id="update">Update</button>
+                        <button type="button" id="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div id="rightPanel">
+                <div id="tableHeader">
+                    <h1>Student Detail table</h1>
+                </div>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by ID/Name/Mobile/E-mail.." title="Type in a name">
+                <div id="tablepanel">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Student name</th>
+                                <th>Mobile number</th>
+                                <th>Email ID</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-list">
+                            <!-- fetch the data from server here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="notification" class="notification"></div>
+    </div>
+
+</body>
+</html>
